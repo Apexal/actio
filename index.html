@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Simple web app to track student participation times in a class.">
+    <meta name="keywords" content="school,student,tracking">
+    <meta name="author" content="Frank Matranga">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Participation Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 id="title">
+          Student Participation Tracker
+          <small>by Frank Matranga</small>
+        </h1>
+      </div>
+    
+      <div class="row">
+        <p class="explanation">
+          Add students with the form below and click each student's button when they start/stop participating.
+        </p>
+      </div>
+    
+      <div class="row">
+        <form id="new-student-form">
+          <input id="new-student-name" type="text" placeholder="Name 1; Name 2; Name 3" maxlength=1000 minlength=2 required>
+          <button class="button-primary">Add Students</button>
+        </form>
+      </div>
+      <hr>
+      <table id="time-table" class="u-full-width">
+        <thead>
+          <tr>
+            <th>Actions</th>
+            <th>Student</th>
+            <th>Total Time</th>
+          </tr>
+        </thead>
+        <tbody id="time-table-body">
+    
+        </tbody>
+      </table>
+    
+      <b>Details</b>
+      <ul id="details-list">
+    
+      </ul>
+    
+      <hr>
+      <i>Idea by Rob Koniuta</i>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

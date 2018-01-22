@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+body {
+  font-family: 'Trebuchet MS';
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#title {
+  margin-top: 40px;
+}
+
+#title small {
+  font-size: 30%;
+  float: right;
+}
+
+button.active {
+  font-weight: bold;
+}
+
+#new-student-form {
+  margin: 0;
+}
+
+input#new-student-name {
+  width: 70%;
+}
+
+td.active {
+  font-weight: bold;
+}
+
+#time-table {
+  margin-bottom: 20px;
+}
+
+.action-button, .remove-student-button {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.student-name {
+  width: 50%;
+}
+
+#details-list > li {
+  margin-bottom: 10px;
+}
+
+.warning {
+  color: red;
+  font-style: italic;
+}
