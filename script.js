@@ -51,8 +51,11 @@ function addStudentRow(student) {
   row.append(td1);
 
   const td2 = document.createElement('td');
+  const a = document.createElement('a');
+  a.href = `#details-${student}`;
+  a.innerText = student;
+  td2.append(a);
   td2.classList.add('student-name');
-  td2.innerText = student;
   row.append(td2);
 
   const td3 = document.createElement('td');
@@ -114,7 +117,7 @@ function updateDisplay() {
     html += s;
 
     // Times
-    html += '<ul>';
+    html += `<ul id="details-${s}">`;
     students[s].forEach(pair => {
       const seconds = Math.round((pair[1] - pair[0]) / 1000);
       const start = new Date(pair[0]).toLocaleTimeString();
