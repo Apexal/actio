@@ -6,7 +6,7 @@ body {
 
 body {
   font-family: 'Trebuchet MS';
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -44,6 +44,18 @@ td.active {
   margin-bottom: 20px;
 }
 
+#time-table th {
+  padding: 12px 0px;
+}
+
+#time-table-body td {
+  padding: 5px;
+}
+
+.remove-student-button {
+  background-color: #ffe6e6;
+}
+
 .action-button, .remove-student-button {
   margin: 0;
   padding-left: 15px;
@@ -56,6 +68,14 @@ td.active {
 
 #details-list > li {
   margin-bottom: 10px;
+}
+
+#details-list .time-run li {
+  margin: 0 !important;
+}
+
+#details-list .time-run ul {
+  margin-top: 0;
 }
 
 .warning {

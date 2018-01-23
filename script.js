@@ -111,7 +111,7 @@ function updateDisplay() {
     	- 12:40:23 to 14:03:30 (90 seconds)
   */
   detailsList.innerHTML = Object.keys(students).map(s => {
-    let html = '<li>';
+    let html = '<li class="time-run one-half column">';
 
     // Student Name
     html += s;
