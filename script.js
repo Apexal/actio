@@ -2,6 +2,7 @@ const jsonOut = document.getElementById('json');
 const timeTable = document.getElementById('time-table-body');
 const newStudentNameInput = document.getElementById('new-student-name');
 const detailsList = document.getElementById('details-list');
+const clearData = document.getElementById('clear-data');
 
 let current = {};
 
@@ -151,7 +152,8 @@ function addStudent() {
 }
 
 function removeStudent(student) {
-	delete students[student];
+  delete students[student];
+  delete current[student];
   document.getElementById(`${student}-row`).remove();
   save();
   updateDisplay();
@@ -164,6 +166,11 @@ function secondsToLabel(totalSeconds) {
     return `${totalSeconds} seconds`;
   }
 }
+
+clearData.onclick = () => {
+  if (confirm('Clear all data?')) 
+    for (s in students) { removeStudent(s); }
+};
 
 setup();
 setInterval(updateDisplay, 1000);
